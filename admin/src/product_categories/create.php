@@ -1,4 +1,6 @@
-<?php 
+<?php
+    require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/errorDisplay.php';
+
     $redirectPath = '/veikals/admin/index.php';
     include $_SERVER['DOCUMENT_ROOT'].'/veikals/admin/src/sessionCheck.php';
     include $_SERVER['DOCUMENT_ROOT'].'/veikals/admin/src/tempCheck.php';

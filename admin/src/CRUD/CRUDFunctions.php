@@ -62,6 +62,7 @@
                 }
             }
         }
+        //arr, bool
         public static function insert ($data, $withID) {
             $id = null;
             try {

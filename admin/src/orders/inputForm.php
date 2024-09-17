@@ -1,4 +1,6 @@
 <?php 
+    require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/errorDisplay.php';
+
     require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/TagLoader.php';
     require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/Database.php';
 ?>

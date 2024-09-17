@@ -1,4 +1,6 @@
 <?php
+    require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/errorDisplay.php';
+
     require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/enums/FormErrorType.php';
     require_once $_SERVER['DOCUMENT_ROOT'].'/veikals/global/enums/FormDataType.php';
     
