@@ -4,7 +4,9 @@
     name="back-button" 
     id="back-button"
     class="btn btn-primary execution-button"
->Atpakaļ</button>
+>
+    Atpakaļ
+</button>
 <script>
     var tableName = <?php echo json_encode($data['table-name']); ?>;
 

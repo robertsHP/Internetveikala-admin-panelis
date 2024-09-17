@@ -26,11 +26,11 @@ USE `prakse_internetveikals`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `client`
+-- Table structure for table `clients`
 --
 
-DROP TABLE IF EXISTS `client`;
-CREATE TABLE IF NOT EXISTS `client` (
+DROP TABLE IF EXISTS `clients`;
+CREATE TABLE IF NOT EXISTS `clients` (
   `client_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `email` varchar(60) NOT NULL,
@@ -61,11 +61,11 @@ CREATE TABLE IF NOT EXISTS `orders` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_state`
+-- Table structure for table `order_states`
 --
 
-DROP TABLE IF EXISTS `order_state`;
-CREATE TABLE IF NOT EXISTS `order_state` (
+DROP TABLE IF EXISTS `order_states`;
+CREATE TABLE IF NOT EXISTS `order_states` (
   `state_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`state_id`)
@@ -77,8 +77,8 @@ CREATE TABLE IF NOT EXISTS `order_state` (
 -- Table structure for table `product`
 --
 
-DROP TABLE IF EXISTS `product`;
-CREATE TABLE IF NOT EXISTS `product` (
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE IF NOT EXISTS `products` (
   `product_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   `description` mediumtext DEFAULT NULL,
@@ -93,11 +93,11 @@ CREATE TABLE IF NOT EXISTS `product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_category`
+-- Table structure for table `product_categories`
 --
 
-DROP TABLE IF EXISTS `product_category`;
-CREATE TABLE IF NOT EXISTS `product_category` (
+DROP TABLE IF EXISTS `product_categories`;
+CREATE TABLE IF NOT EXISTS `product_categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`category_id`)
@@ -127,8 +127,8 @@ CREATE TABLE IF NOT EXISTS `purchased_goods` (
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `surname` varchar(45) NOT NULL,
@@ -151,7 +151,7 @@ ALTER TABLE `orders`
 --
 -- Constraints for table `product`
 --
-ALTER TABLE `product`
+ALTER TABLE `products`
   ADD CONSTRAINT `fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `product_category` (`category_id`);
 
 --

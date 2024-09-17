@@ -169,6 +169,7 @@
             $('.editable-table-row-form').each(function() {
                 var productsData = <?php echo json_encode($productsData); ?>;
                 var purchGoodsData = <?php echo json_encode($purchGoodsData); ?>;
+                
                 productsData['db-process-type'] = data['db-process-type'];
                 purchGoodsData['db-process-type'] = data['db-process-type'];
             

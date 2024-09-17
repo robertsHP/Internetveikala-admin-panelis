@@ -50,6 +50,8 @@
             $result = null;
             try {
                 $conn = Database::openConnection();
+
+                
                 
                 $stmt = $conn->prepare("SELECT * FROM $tableName");
                 $stmt->execute();

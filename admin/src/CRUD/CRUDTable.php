@@ -25,7 +25,6 @@
             }
         }
         private static function loadData (array $dbResult, array $columns) {
-
             foreach ($dbResult as $row) {
                 $keys = array_keys($row);
                 $id = $row[$keys[0]];
